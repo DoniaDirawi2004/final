@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Idea Product</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Idea Product</div>
+    <nav>
+      <ul>
+        <li><a onclick="showSection('home')">Home</a></li>
+        <li><a onclick="showSection('projects')">Projects</a></li>
+        <li><a onclick="showSection('workshops')">Workshops</a></li>
+        <li><a onclick="showSection('signin')">Sign In</a></li>
+        <li><a onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section active">
+      <div class="home-hero">
+        <div class="overlay-content">
+          <h2>Showcase Your Creativity</h2>
+          <p>Every piece tells a story — start yours today.</p>
+          <button onclick="showSection('share')">Share Your Idea</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Featured Projects</h2>
+      <div class="project-gallery">
+        <div class="circle"><img src="Resin.jpeg" alt="Resin" /></div>
+        <div class="circle"><img src="Bead bag.jpeg" alt="Bead" /></div>
+        <div class="circle"><img src="flower crochet.jpeg" alt="crochet" /></div>
+      </div>
+    </section>
+
+    <section id="workshops" class="section">
+      <h2>Upcoming Workshops</h2>
+      <p>Join our creative online workshops soon!</p>
+    </section>
+
+    <section id="signin" class="section">
+      <h2>Sign In</h2>
+      <form>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+      </form>
+    </section>
+
+  
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
+      </form>
+    </section>
+  </main>
+  
+<section id="share" class="section">
+  <h2>Share Your Idea</h2>
+  <form>
+    <input type="text" placeholder="Project Name" />
+    <textarea placeholder="Describe your idea..."></textarea>
+    <button>Submit</button>
+  </form>
+</section>
+  <script src="f.js"></script>
+</body>
+</html>
